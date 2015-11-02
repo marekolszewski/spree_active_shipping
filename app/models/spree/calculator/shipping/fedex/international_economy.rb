@@ -7,6 +7,11 @@ module Spree
         def self.description
           I18n.t("fedex.intl_economy")
         end
+
+        protected
+        def max_weight_for_country(country)
+          return 36
+        end
       end
     end
   end
