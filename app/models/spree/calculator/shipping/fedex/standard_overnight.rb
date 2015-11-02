@@ -5,6 +5,11 @@ module Spree
         def self.description
           I18n.t("fedex.standard_overnight")
         end
+
+        protected
+        def max_weight_for_country(country)
+          return 36
+        end
       end
     end
   end
