@@ -13,6 +13,11 @@ module Spree
         def self.description
           I18n.t("usps.priority_mail_flat_rate_envelope")
         end
+        
+        protected
+        def max_weight_for_country(country)
+          return 36
+        end
       end
     end
   end
